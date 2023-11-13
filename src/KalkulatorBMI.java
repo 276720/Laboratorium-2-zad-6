@@ -40,7 +40,12 @@ public class KalkulatorBMI extends JFrame{
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new KalkulatorBMI();
+                try{
+                    KalkulatorBMI test = new KalkulatorBMI();
+                    test.setVisible(true);
+                }catch (Exception e ){
+                    e.printStackTrace(System.err);
+                }
             }
         });
     }
